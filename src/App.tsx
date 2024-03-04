@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import RootLayout from "./Pages/RootLayout";
+import Order from "./Pages/Order";
+import CartPage from "./Pages/CartPage/CartPage";
+import ErrorPage from "./Pages/ErrorPage/ErrorPage";
+import HomePage from "./Pages/HomePage/HomePage";
+import FoodShopDetails from "./Components/FoodShops/FoodShopDetails/FoodShopDetails";
+import { ToastContainer } from "react-toastify";
+import AuthenticationPage from "./Pages/AuthenticationPage";
+import { checkAuthLoader, tokenLoader } from "./util/auth";
 
-function App() {
+import "react-toastify/dist/ReactToastify.css";
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <RootLayout />,
+      errorElement: <ErrorPage />,
+      id: "root",
+      loader: tokenLoader,
+      children: [
+        { path: "/", element: <HomePage /> },
+        { path: "/menu", element: <Order /> },
+        { path: "/menu/:shopId/:category?", element: <FoodShopDetails /> },
+        { path: "/cart", element: <CartPage />, loader: checkAuthLoader },
+        { path: "/auth", element: <AuthenticationPage /> },
+      ],
+    },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer newestOnTop={true} />
+      <RouterProvider router={router} />
+    </>
   );
-}
+};
 
 export default App;

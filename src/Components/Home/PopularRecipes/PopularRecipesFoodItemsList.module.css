@@ -1,0 +1,30 @@
+.popular-recipes__container {
+  display: flex;
+  margin-bottom: 75px;
+  height: 615px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.popular-recipes__container::-webkit-scrollbar {
+  display: none;
+}
+
+.popular-recipes__container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 900px) {
+  .popular-recipes__container {
+    height: 500px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .popular-recipes__container {
+    height: 400px;
+    margin-bottom: 35px;
+  }
+}

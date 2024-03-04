@@ -1,0 +1,25 @@
+.results-list {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #ddd;
+  border-radius: 5px;
+  max-height: 175px;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+.results-list::-webkit-scrollbar {
+  display: none;
+}
+.results-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scrollbar-gutter: stable both-edges;
+}
+
+@media screen and (max-width: 450px) {
+  .results-list {
+    font-size: 14px;
+  }
+}

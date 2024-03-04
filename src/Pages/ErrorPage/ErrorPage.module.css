@@ -1,0 +1,57 @@
+.error-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.error-container .error-img {
+    width: 100%;
+    background: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif) no-repeat;
+    height: 400px;
+    background-position: center;
+}
+
+
+
+.error-no {
+    font-size: 80px;
+    text-align: center;
+
+
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.error-details {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.error-details .error-title{
+    font-size: 36px;
+}
+
+
+.error-details .error-subtitle{
+    font-size: 18px;
+}
+
+.error-btn {
+    padding: 10px 20px;
+    background: var(--primary-color);
+    margin: 20px 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.error-btn a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}

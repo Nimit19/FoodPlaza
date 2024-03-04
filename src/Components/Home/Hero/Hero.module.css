@@ -1,0 +1,130 @@
+.main {
+  background: url("https://s3-alpha-sig.figma.com/img/14a4/e8be/2dfca0f37cc7f0bd316347a32de67139?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mZIko93dPqzG7Q95gJNssY3wdBmVVfI8u5MxFAaMgKQ1~84iM9VMLcohPUkQTh6H8K5nzokMVJEHK50Ru2tgOysFvg2HzgSetOJuxXXNsQ9yPfxLOfRK4ZtXANqfkLY7XhzuvLlItrUPthdK0GNt2MNPhKohvalCf42ngfAcADLj6hU4WOV~bdnICCx-ha4fy7Ax-kg14sIK~0MtFrGzRKRLGOiOiLxgU8uWMiCIrL0mLdT0vvMBUbqRczASmn1EcImWJovTaTYjcHsEhw4JwU~zMLm01jHJZuDLDm0rPuUMXjjeNYMG-wYgslFIOS1f5bazheLGt6tEvdktncK9JQ__")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.search-bar-container {
+  padding-top: 10px;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+}
+
+.hero h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero p {
+  font-size: 24px;
+  color: white;
+}
+
+.search-bar {
+  width: 575px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .main {
+    height: 42vh;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 24px;
+    color: white;
+  }
+
+  .hero .search {
+    margin-top: 45px;
+  }
+
+  .hero .search input {
+    width: 35vw;
+    min-width: 0;
+    max-width: 400px;
+  }
+
+  .hero .search select {
+    width: 135px;
+    font-size: 18px;
+  }
+
+  .hero .search input,
+  select {
+    padding: 8px;
+  }
+
+  .hero .separate {
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 700px) {
+  .search-bar {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  .hero {
+    margin-top: 30px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .search-bar {
+    width: 90vw;
+  }
+}

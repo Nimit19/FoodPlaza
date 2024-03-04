@@ -1,0 +1,128 @@
+.dining-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  margin: 50px 0;
+}
+
+.dining-box__details {
+  width: 22vw;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dining-boxes img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0;
+  height: 175px;
+  object-fit: cover;
+}
+
+.dining-boxes h3,
+.dining-boxes p {
+  padding-left: 10px;
+}
+
+.dining-boxes h3 {
+  padding-top: 10px;
+}
+
+.dining-boxes p {
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1500px) {
+  .dining-boxes {
+    gap: 3vw;
+  }
+
+  .dining-box__details {
+    width: 28vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dining-boxes {
+    gap: 1.5vw;
+  }
+
+  .dining-box__details {
+    width: 29vw;
+  }
+
+  .dining-boxes img {
+    height: 150px;
+  }
+
+  .dining-boxes h3 {
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  .dining-boxes p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dining-boxes {
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .dining-box__details {
+    width: 90vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+  }
+
+  .dining-boxes img {
+    width: 40vw;
+    border-radius: 8px 0px 0px 8px;
+    height: 200px;
+  }
+
+  .dining-boxes p {
+    font-size: 16px;
+  }
+
+  .dining-boxes h3,
+  .dining-boxes p {
+    padding: 0 25px;
+  }
+
+  .dining-boxes h3 {
+    padding-top: 25px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dining-boxes {
+    gap: 15px;
+    margin: 25px 0;
+  }
+
+  .dining-box__details {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .dining-boxes img {
+    width: 100%;
+    border-radius: 8px 8px 0px 0;
+    height: 150px;
+  }
+
+  .dining-boxes h3 {
+    font-size: 18px;
+  }
+
+  .dining-boxes p {
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+}

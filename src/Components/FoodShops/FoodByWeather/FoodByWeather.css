@@ -1,0 +1,114 @@
+.food-recommendation {
+  margin: 10px auto;
+  width: var(--custom-container);
+}
+.food-recommendation .food-recommendation__items {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  /* grid-template-rows: repeat(2, auto); */
+  column-gap: 4.5vw;
+  row-gap: 3vw;
+  /* justify-content: stretch; */
+  /* align-items: center; */
+}
+
+.food-recommendation__title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.food-recommendation .food-recommendation__items .food_item .food_item-img {
+  width: 27vw;
+  height: 18vw;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.food-recommendation .food-recommendation__items .food_item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 200ms ease;
+}
+.food-recommendation .food-recommendation__items .food_item-img:hover img {
+  transform: scale(1.05);
+}
+
+.food-recommendation
+  .food-recommendation__items
+  .food_item
+  .food_details
+  p:nth-child(1) {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000000;
+}
+.food-recommendation
+  .food-recommendation__items
+  .food_item
+  .food_details
+  p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #999999;
+}
+
+@media screen and (max-width: 900px) {
+  .food-recommendation .food-recommendation__items {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 3vw;
+    row-gap: 4vw;
+  }
+
+  .food-recommendation .food-recommendation__items .food_item .food_item-img {
+    width: 42vw;
+    height: 24vw;
+    margin: auto auto;
+  }
+
+  .food-recommendation .food-recommendation__items .food_item {
+    margin: auto auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .food-recommendation .food-recommendation__items {
+    grid-template-columns: repeat(1, auto);
+    column-gap: 0;
+    row-gap: 10vw;
+  }
+  .food-recommendation__title {
+    font-size: 24px;
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  .food-recommendation .food-recommendation__items .food_item .food_item-img {
+    width: 90vw;
+    height: 50vw;
+  }
+
+  .food-recommendation
+    .food-recommendation__items
+    .food_item
+    .food_details
+    p:nth-child(1) {
+    font-size: 18px;
+  }
+  .food-recommendation
+    .food-recommendation__items
+    .food_item
+    .food_details
+    p:nth-child(2) {
+    font-size: 14px;
+  }
+}
