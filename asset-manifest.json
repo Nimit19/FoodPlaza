@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/FoodPlaza/static/css/main.b0fe5233.css",
+    "main.js": "/FoodPlaza/static/js/main.5c5764f7.js",
+    "static/js/453.d283d80a.chunk.js": "/FoodPlaza/static/js/453.d283d80a.chunk.js",
+    "static/media/right_2.jpeg": "/FoodPlaza/static/media/right_2.ef338735851527e69b01.jpeg",
+    "static/media/right_1.jpeg": "/FoodPlaza/static/media/right_1.5e4e6550fda606376d1b.jpeg",
+    "static/media/left.jpg": "/FoodPlaza/static/media/left.e0fad02c9c41852809ea.jpg",
+    "static/media/empty-cart.svg": "/FoodPlaza/static/media/empty-cart.67118265446f9d4ebbea9a4d70324497.svg",
+    "static/media/cart-logo.svg": "/FoodPlaza/static/media/cart-logo.02f563ed1fa4e7dc2be7702e144f609a.svg",
+    "static/media/add-cart.svg": "/FoodPlaza/static/media/add-cart.ab7ebcd3c691a09444dc2cb9b9b64a5c.svg",
+    "index.html": "/FoodPlaza/index.html",
+    "main.b0fe5233.css.map": "/FoodPlaza/static/css/main.b0fe5233.css.map",
+    "main.5c5764f7.js.map": "/FoodPlaza/static/js/main.5c5764f7.js.map",
+    "453.d283d80a.chunk.js.map": "/FoodPlaza/static/js/453.d283d80a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0fe5233.css",
+    "static/js/main.5c5764f7.js"
+  ]
+}
